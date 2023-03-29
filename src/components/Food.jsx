@@ -23,7 +23,7 @@ const Food = () => {
     }
 
   return (
-    <div className='max-w-[1640px] m-auto px-4 py-12'>
+    <div className='max-w-[1240px] m-auto px-4 py-12'>
         <h1 className='text-orange-600 font-bold text-4xl text-center'>Top Rated Menu Items</h1>
 
         {/* Filter Row */}
@@ -89,7 +89,7 @@ const Food = () => {
             {/* Display Foods */}
             <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4'>
                 {foods.map((item, index)=> (
-                    <div key={index} className='border shadow-lg rounded-lg hover:scale-105 duration-300' >
+                    <div key={item.id} className='border shadow-lg rounded-lg hover:scale-105 duration-300' >
                         <img src={item.image} alt={item.name} className='w-full h-[200px] object-cover rounded-t-lg'/>
                         <div className='flex justify-between px-2 py-4'>
                             <p className='font-bold'>{item.name}</p>
